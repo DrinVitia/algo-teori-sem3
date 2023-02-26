@@ -3,12 +3,12 @@
 ## Grafet 
 quajm bashkesin e kulmeve te cilat jane te lidhura me ane te segmenteve.
 
-### Qka quaj rruge ne nje graf ?
+### Qka quajm rruge ne nje graf ?
 Seri te kulmeve te lidhura me segmente .
 
 ### Qka quaj cikel ?
 Cikel quajm kur  kulmi i pare dhe i fundit eshte i njejte.
-Shpjego Ciklin e Ederit dhe Hamiltonit?
+### Shpjego Ciklin e Ederit dhe Hamiltonit?
 C.Ederit  perdor secilin segment saktsisht nje her.
 C.Hamiltonit  perdor secilin kulm saktsisht nje her.
 
