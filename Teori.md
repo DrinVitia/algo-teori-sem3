@@ -1,76 +1,76 @@
 # algo-teori-sem3
 
-##Grafet 
+## Grafet 
 quajm bashkesin e kulmeve te cilat jane te lidhura me ane te segmenteve.
 
-###Qka quaj rruge ne nje graf ?
+### Qka quaj rruge ne nje graf ?
 Seri te kulmeve te lidhura me segmente .
 
-###Qka quaj cikel ?
+### Qka quaj cikel ?
 Cikel quajm kur  kulmi i pare dhe i fundit eshte i njejte.
 Shpjego Ciklin e Ederit dhe Hamiltonit?
 C.Ederit  perdor secilin segment saktsisht nje her.
 C.Hamiltonit  perdor secilin kulm saktsisht nje her.
 
-###Sa lloje te grafeve kemi ?
+### Sa lloje te grafeve kemi ?
 Directed dhe Undirected.
 
-###Sa % kemi human error?
+### Sa % kemi human error?
 4% Human error.
 Undirected Graph Anomalite:
 Segmentimi paralel dhe ka self loop.
 Perdor Symbol Table per konvertimin e emrave dhe integjereve.
 
-###Cka jane MFormat Methods?
+### Cka jane MFormat Methods?
 jane metoda per me i hek gabimet ne sisteme softwerike (makina vetlevizese tesla).
 
-###Si emertohen kulmet e nje grafi ?
+### Si emertohen kulmet e nje grafi ?
 V-1
 
-###Qysh me i lidh dy grafe me kod ?
+### Qysh me i lidh dy grafe me kod ?
 Public class Graph
 Graph(int V);
 Graph(int W);
 addEdge(int V,int W);
 
-###Menyra e paraqitjes se grafeve?
+### Menyra e paraqitjes se grafeve?
 1.Set Of Edges graph
 2.Matric(E shpejt per searching)
 3.Array List
 
-###Mangesit e Matric Graph :
+### Mangesit e Matric Graph :
 Double Data(shume vend ne memorie zen,smujna me bo segmentim paralel)
 
-###A eshte me i shpejte nje graf me 200 a 2000 segmente .
+### A eshte me i shpejte nje graf me 200 a 2000 segmente .
 2000 eshte me i shpejte.
 Undirected add nkod:
 adj[V].add[w]; 1-2
 adj[W].add[V]; 2-1
 
-###Cilet jane dy algoritmet per kerkim(searching):
+### Cilet jane dy algoritmet per kerkim(searching):
 DFS - ne stack (Lifo) ideja e saj eshte qe te mos e vizitoj nje kulm dy her prandaj e bon check,perdoret per kerkim randomly jo specific.
 BFS - ne queue(FIFO) perdoret me shume kur kemi me bo searching dicka specifike
 
-###Karakteristikat e DFS:
+### Karakteristikat e DFS:
 Impimentohet ne stack 
 Shkon ne thellsi sa me shume qe eshte e mundur .
 
-###Paraqitja e DFS?
+### Paraqitja e DFS?
 V/edgeTo[]/marked
 EdgeTo=me i lidh kulmet ne graf.
 Marked=me kshyr a e kena vizitu .
 
-###Karakteristikat e BFS?
+### Karakteristikat e BFS?
 Implimentohet me Query(fifo)
 Shkon ne gjersi .
 
-###Cili eshte me i shpejte DFS VS BFS?
+### Cili eshte me i shpejte DFS VS BFS?
 Njejte.
 Paraqitja e BFS ?
 V/edgeTo[],distTo[];
 distTo[]=me sa hapa ose segmente kemi mrri .
 
-###Si ndahen Grafet ne baze te emertimit :
+### Si ndahen Grafet ne baze te emertimit :
 Te thjeshta dhe te perbera
 List of Edges grapf mirmbahet me linked list ose array.
 Adjacency-list mirmbahet me emrat e kulmeve array of lists.
@@ -82,7 +82,7 @@ Perdor marked[],dhe id[].
 Nje graf nuk ka cycle nese ne ate graf munesh me gjet Topological order.
 BFS gjen rrugen me te shkurt te grafit.
 
-###Connected components vs. strongly connected components
+### Connected components vs. strongly connected components
 Connected Components  quajm kur komponentet kane nje rrug te komunikojn mes veti.(let mu perdor me DFS).
 Strongly CC  quajm kur komponentet kan nje komunikim me drejtime qe mund te shkojn nga njeri tek tjetri.
 Algoritmi me i mire per me perdor Strongly CC eshte Kisharaju.
@@ -91,7 +91,7 @@ Per me u paraqit DiGraph perdoret adjacency list.
 Kosaraju-Sharir algorithm  Komponentet Strong G jane te njejta si G ^R(reverse).Perdor DFS.
 Implimentimi i lete dhe DFS perdor dyher pasi qe niher e ben reverse.
 
-###Topological sort (DAG)  perdor DFS.
+### Topological sort (DAG)  perdor DFS.
 Me grafe punojm me sorttable.
 Dead code  quajm kodin i cili gjindet ne program por nuk perdoret asnjeher.
 3 menyra  me i paraqit grafet:
@@ -102,16 +102,16 @@ Anomali  Paralel edges dhe self loop
 Paralel edges  kur nje graf ka nje lidhje me nje graf tjeter ose me shume se nje .
 Self Loop 
 
-###Directed  kur kan kahje segmentet
+### Directed  kur kan kahje segmentet
 
-###Undirected-segmentet nuk kan kahje
+### Undirected-segmentet nuk kan kahje
 Metoda me shtu segmente ose brinje  addEdge();
 
-###PARALEL EDGES - kur kemi grafe nuk punon menyra e matrices,sepse per njeren mun me qit 1 per tjetren smun.
+### PARALEL EDGES - kur kemi grafe nuk punon menyra e matrices,sepse per njeren mun me qit 1 per tjetren smun.
 Kuzharazhu sahiri kerkon komponente me te forte sepse mos me pas pengesa te medha dhe defekte ne ate graf si psh per Directed cycle  .(Topoligical sort ose order).
 (4 msime dhe 2 code exection) na vyn me dit ni graf dhe me dit me puno me to .(ushtrime).
 
-###Minimum Spanning Trees
+### Minimum Spanning Trees
 perdor undirected graph.
 0.00 nuk hin ne MST.(Vlera 0 ).
 Spanning Tree i G eshte nje nengraf T i cili :
@@ -120,40 +120,40 @@ aciklik.
 perfshine te gjitha kulmet.
 ###Self-Loop pranohet ne MSP munet me pas por ne raste te rralla.
 Ideja qe e perdorim MST eshte qe me gjet peshen me te vogel .
-###Spanning Tree duhen me kon te lidhura (bolt lines) ndryshe nese so e lidht nuk o .
-###Edge weighted Graph  quhet pasi qe e ka nje peshe unike (numer unik).
+### Spanning Tree duhen me kon te lidhura (bolt lines) ndryshe nese so e lidht nuk o .
+### Edge weighted Graph  quhet pasi qe e ka nje peshe unike (numer unik).
 Per me ul nivelin qe me dy segmente me pas vleren e njejte duhet gjithmon me rujt double jo si int.(se mundesi me e madhe ne INT eshte qe me kon me peshe te njejte).
 Shumes se peshave i thojme Cmim.
 Sa me i ult cmimi qaq me efikas ose me i mire minimum spanning tree .
 Pesha eshte shume e disa atributeve te ndryshme psh (distance ,kohe etj)
 
-###Secili dizajne i secilit rrjet ne bote qe organizohet behet me MST.(Rruge,qarqe,hydraulic,komunikacion ) qe me i mrri ma shpejt edhe mas lehti qe me hargju ma 
+### Secili dizajne i secilit rrjet ne bote qe organizohet behet me MST.(Rruge,qarqe,hydraulic,komunikacion ) qe me i mrri ma shpejt edhe mas lehti qe me hargju ma 
 pak .psh
 kur kemi Face Recognition funksionon me MTS.
-###Greedy MST Algorithm
+### Greedy MST Algorithm
 Algoritmi me i thjeshte me gjet MST.
 Per me gjet GMST duhet me bo prerje(CUT) sipas deshires  qe ne perfundim me gjet Minimalin pas qe ne fund duhet me gjet Minimum Spanning Tree ,
 egzistojn disa brinje apo segmente qe e lidhin bashkesin I me II dhe quhen Crossing edge,me e vogla ka me qet pjese e MST.
 Hapi fundit na mbet vetem ni kulm dhe nese ndodh mund ta vertetojm qe osht mire detyra.
 
-###Kruskal Algorithm
+### Kruskal Algorithm
 Gjithmon e teston Spanning tree a ka loop-cycle.
 Nuk eshte prej algoritmeve  me te mire sepse i fut te gjitha ne memorie dhe hargjon memorie per ato pa nevoj nganjeher dhe ka loop .
 Nese ka loop e hek .
 
-###Prim's  Algorithm
+### Prim's  Algorithm
 Primi starton prej 0 .
 Psh nga 0 ne 7 tane vazhdon prej 7 shkon i gjet brinjet tjera bashk me 0 .
 Logjiken e njejte si te Greedy .
 Punon sikur me Heapsort.
 Smun me ndodh loop.
 
-###(Prim)Lazy Implementation 
+### (Prim)Lazy Implementation 
 Priority queue *
 Ky perdor nodes(Kojshit e vet ) , nuk perdor bashkesi .
 Nese ka loop i shton nmemorie sepse eshte lazy pasi qe nuk ia nin (i shti ne memorie edhe veq i le pa naj far lloj funksioni).
 Loopat ia nisim e u hek prej memories kur vlerat e loopes duhet me i shti nMST.
-###Prim eager implementation 
+### Prim eager implementation 
 I kemi  disa array edgeTo[] dhe distTo[]
 Kur e perdorim njonen vlere njeher mo nuk e perdorum se asnjeher nuk ka nje distanc me te shpejt se ajo .
 Eager ka mundesi permisimi ateher kur mund te bejme diqka me shpejte .
@@ -161,7 +161,7 @@ Mun me bo cikel
 
 
 
-###Shortes Path 
+### Shortes Path 
 Nje graf mun te kete me shume se nje Topological sort .(Pytje provimit)
 Perdoret per navigim edhe per rrjeta mas shumti .
 Single source  prej nje kulmi i gjen rruget ma tshkurta .(ma i preferumi)
@@ -175,32 +175,32 @@ kjo ndodh kur e qesim ni segment tri edhe kshyrum me zvoglu peshen e udhes.
 2.Acyclic(no cycle)
 3.Bellman-Ford(no negativ cycles).-punon edhe me vlera negative edhe me pas cikle,por ka mangsi se nese nese ka cikel negativ nuk punon.
 
-###Dijakstra
+### Dijakstra
 i permban dy array distTo[] dhe edgeTo[].
 Kush e ka distancen me te vogel miret si source.
 
-###Acyclic 
+### Acyclic 
 ne fillim e gjen Topological Order sepse nuk punon me cycle.(DFS)(distTo[],edgeTo[]).
 Renditja shkon me Topological Order jo me peshen me te vogel .
 
 
-###Bellman-Ford 
+### Bellman-Ford 
 i provon prej tpares te krejt kulmet qe lidhet aj .
 kalimet quhen me pass .
 Nese ne pass e radhes nuk kemi update ather skena nevoj me shku me i bo pass tjerat se ska update.
 
 
-###Ma i keqi algoritem per nga kompleksiteti eshte Bellman ford.
+### Ma i keqi algoritem per nga kompleksiteti eshte Bellman ford.
 Dijakstra ma i miri (binaryheap).
 Edhe topological sort eshte prej ma tmirve .
 
 
-###Longest path  perdor topological order ,i marrum peshat ma tmdhaja .
+### Longest path  perdor topological order ,i marrum peshat ma tmdhaja .
 Per me procesu paralel nevoitet Longest Path.
 
-#Per Kolofium tdyt
+# Per Kolofium tdyt
 
-###Stringet
+### Stringet
 Tri vetit themelore te stringave:
 1.Length gjatesia e stringut 
 2.Indexing vlera e stringut ne index.
@@ -214,7 +214,7 @@ MSD-ma e ngadalte sepse ze shume vend me memorie,sepse nese kena me sortu shume 
 
 
 
-###Tries
+### Tries
 Strukture qe do te perdoret per stringe  perdor key value ,eshte searching algorithm,eshte si symbol table,eshte collection i objekteve qe te gjitha objektet do te jene te tipit string.
 Me tries do mundohemi te bejm searching stringe me metoden get(String key).
 Algoritmi me i shpejte per me gjet stringe eshte ky (Tries).
@@ -235,7 +235,7 @@ TST eshte me e shpejt se hashin .
 TST mun me pas search miss vetem te disa karaktera ndersa hashing searching hits edhe misses jon gati tnjejta.
 (13 janar 2023 kolofiumi 2 )
 
-###Substring Search
+### Substring Search
 
 Dy length duhet me i kerku per me bo searching :Text dhe pattern(pattern eshte substringu qe e kerkojm)(Text eshte gjithmon me i madh se pattern).
 Forensika kompjuterike - pjese qe lidhet me data security dhe me cyber security .
@@ -267,7 +267,7 @@ ne rastin me te keq eshte M N .
 
 
 
-###Regular Expressions
+### Regular Expressions
 Pattern Matching:
 Regeksi na mundeson me i marr disa stringje te ndryshme edhe me ane te regular expressions i perfshin ato ne nje string.Kryen pune me shpejte se ato me lart.
 Regeksi kur ta maroje maqinen na qon prej DFA ne NFA .
@@ -277,7 +277,7 @@ Regeksi mun prej nje substring me te dhon dy sene jo si te substring search qe v
 RFC-Request for Comments 
 
 
-###Data Compression
+### Data Compression
 Behet per 3 arsye :
 Kursen hapsire memorike
 Kursen kohe te transferit.
@@ -298,7 +298,7 @@ ne tablen e tij ka :char,freq,encoding.
 Ky i shkrun prefix.(diqka qeshtu ke ,nese qet najsen se kush perdor prefix e prek Huffman).
 Algoritmi LZW  model adabtiv.Perdor fjalor.
 
-###Maximum Flow
+### Maximum Flow
 Perdoret per rrjeta etj.
 Ford-Fulkerson Algorithm- e percakton maksimumin e informatave qe mujn me rrjedh prej source ne target.
 Ky problem Maximum flow ka natyre te dyfisht sepse nese nese e shohum nga njera ane ,algoritmi kshyr sasin ma te madhe te informatave me dergu prej source ntarget.
