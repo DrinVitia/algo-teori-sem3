@@ -223,10 +223,10 @@ R-way -ka shume sasi te memories qe eshte e humbur,(njera prej te keqijav te tir
 Metoda per me shti elemente eshte put().
 Dy lloje per search missing:
 Nese mungon karakteri edhe nese ska index .Karakterin e lyp me CharAt().
-###Ternary Search Tries 
+### Ternary Search Tries 
 Krejt karakterat ruhen ne nyje jo ne key
 Secila nyje ka 3 femije me shume jo , me kusht qe me i vogli te shkoj majtas,i barabart ne mes dhe me te madh djathtas.
-###TST VS Hashing 
+### TST VS Hashing 
 TST punon veq me string ndersa Hashing punon me gjithqka.
 Hashing duhet me i marr krejt vlerat e qelsave me i llogarit per me kshyr a ka collision ,ndersa nTST ska nevoj .
 TST kontrollon aq karaktere sa i duhen ne qels,ndersa ne Hashin krejt qelsin e kontrollon.
